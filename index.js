@@ -11,10 +11,7 @@ app.use(express.json())
 
 // Available routes
 app.use('/api/auth', require('./routes/auth'))
-// app.use('/api/notes', require('./routes/notes'))
-
 app.use('/api/contact', require('./routes/contact'))
-// app.use('/api/notes', require('./routes/notes'))
 
 app.listen(port, () => {
   console.log(`myNotebook backend listening on port ${port}`)

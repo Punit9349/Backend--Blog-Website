@@ -7,20 +7,19 @@ const ContactSchema= new Schema({
     },
     email:{
         type:String,
-        required:true,
-        // unique:true
+        required:true
     },
     phone:{
-        type:String,
+        type: Number,
         required:true
     },
     message:{
         type:String,
-        // required:true
+        required:true
     },
     date:{
         type:Date,
-        default: Date.now
+        default: Date.now,
     },
 });
 
